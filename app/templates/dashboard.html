@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - Learnify{% endblock %}
+{% block content %}
+<div class="dashboard-container">
+  <h1>Welcome, {{ user.email }}!</h1>
+  <p>Your role: <strong>{{ user.role.capitalize() }}</strong></p>
+  
+  <section class="courses">
+    <h2>Your Courses</h2>
+    <p>This section will list courses you are enrolled in or recommended.</p>
+    <!-- You can dynamically load courses here -->
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Login - Learnify{% endblock %}
+{% block content %}
+<div class="form-container">
+  <h2>Login to Your Account</h2>
+  <form method="POST" class="form">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Your password" required />
+    
+    <button type="submit" class="btn">Login</button>
+  </form>
+  <p>Don't have an account? <a href="{{ url_for('auth.signup') }}">Sign up here</a></p>
+</div>
+{% endblock %}
